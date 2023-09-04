@@ -1,0 +1,114 @@
+.home-section{
+    margin-bottom: 60px;
+}
+.image-section img{
+    max-height: 60vh;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.navigation{
+    background-color: transparent;
+}
+.last-work{
+    margin: 0 auto;
+    margin-top: 100px;
+    max-width: 1200px;
+    padding: 40px;
+
+    .last-work-title{
+        display: flex;
+        align-items: center;
+        color: gray;
+        gap: 40px;
+        justify-content: center;
+        margin-bottom: 30px;
+    
+        span{
+            max-width: 33%;
+            width: 100%;
+            height: 1px;
+            background-color: rgb(173, 173, 173);
+        
+        }
+        h4{
+            letter-spacing: 1.5px;
+            text-align: center;
+        }
+    }
+}
+
+
+.last-work-gallery{
+    width: 30%;
+    padding: 5px;
+    background-color: white;
+    border: solid 1px rgb(237, 237, 237);
+    border-radius: 8px;
+    box-shadow:  1px 0 .4em rgb(229, 229, 229);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    
+
+
+}
+.last-work-gallery:hover{
+    
+        box-shadow:  4px 2px .4em rgb(191, 191, 191);
+    
+}
+
+.gallery-section{
+    a{
+        text-decoration: none;
+        color: rgb(58, 58, 58);
+    }
+    display: flex;
+    justify-content: space-between;
+
+    .last-work-gallery {
+        padding: 10px;
+        img{
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        p{
+            padding-left: 20px;
+            padding-top: 20px;
+            margin-bottom: 10px;
+        }
+        span{
+            padding-left: 20px;
+            color: rgb(161, 162, 162);
+        }
+    }
+}
+
+@media(max-width:767px){
+    .gallery-section{
+        flex-direction: column;
+        gap: 75px;
+        align-items: center;
+
+        a{
+            max-width: 60%;
+            width: 100%;
+            
+        }
+        .last-work-gallery{
+            img{
+                height: 300px;
+            }
+        }
+    }
+}
+@media(max-width:420px){
+    .gallery-section{
+        a{
+            max-width: 90%;
+        }
+    }
+}

@@ -1,0 +1,96 @@
+.email-form{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 20px;
+    form{
+        font-weight: 300;
+        font-size: 20px;
+        h2{
+            font-weight: 300;
+            font-size: 32px;
+            margin-top: 75px;
+            margin-bottom: 20px;
+        }
+
+        .box-form{
+            display: flex;
+            gap: 40px;
+
+            .box-form-left{
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+
+                .input-section{
+                    display: flex;
+                    flex-direction: column;
+
+                    label{
+                        margin-bottom: 4px;
+                    }
+
+                    input{
+                        font-size: 20px;
+                        height: 46px;
+                        border-radius: 8px;
+                        border: 1px solid rgb(167, 165, 165);
+                        padding-left: 20px;
+                        
+                    }
+                    
+                }
+            }
+
+            .box-form-right{
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+
+                label{
+                    
+                    margin-bottom: 4px;
+                }
+                textarea{
+                    padding: 20px;
+                    font-size: 20px;
+                    border-radius: 8px;
+                    border: 1px solid rgb(167, 165, 165);
+                    height: 100%;
+                }
+            }
+        }
+
+        .submit-button{
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            
+            input{
+                margin-top: 20px;
+                background-color: rgb(49, 49, 49);
+                color: white;
+                font-size: 18px;
+                padding: 10px 20px;
+                font-weight: 500;
+                border-radius: 8px;
+                margin-bottom: 20px;
+                cursor: pointer;
+                border: none;
+                transition: all ease-in-out 0.3s;
+            }
+            
+            input:hover{
+                background-color: rgb(83, 83, 83);
+                transform: translateY(-2px);
+            }
+        }
+        
+    }
+}
+
+@media (max-width: 767px) {
+    .box-form{
+        flex-direction: column;
+    }
+}
